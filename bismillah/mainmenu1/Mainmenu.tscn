@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://mainmenu/dfab39347955ef4c94bbe6dd9316929c.jpg" type="Texture" id=1]
+[ext_resource path="res://Picsart_23-09-29_11-48-44-888.png" type="Texture" id=2]
+[ext_resource path="res://logo.png" type="Texture" id=3]
+[ext_resource path="res://startbutton.png" type="Texture" id=4]
+[ext_resource path="res://about/aboutbutton.png" type="Texture" id=5]
+[ext_resource path="res://level1 run/aboutpress.png" type="Texture" id=6]
+[ext_resource path="res://level1 run/startprees.png" type="Texture" id=7]
+[ext_resource path="res://mainmenu/Mainmenu.gd" type="Script" id=8]
+
+[node name="Mainmenu" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 650.272, 342 )
+scale = Vector2( -2.30493, 1.80451 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="text" type="Sprite" parent="."]
+position = Vector2( 660, 269 )
+scale = Vector2( 0.766667, 0.705903 )
+texture = ExtResource( 2 )
+
+[node name="start" type="TouchScreenButton" parent="."]
+position = Vector2( 151, 552 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 7 )
+
+[node name="about" type="TouchScreenButton" parent="."]
+position = Vector2( 849, 556 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 6 )
+
+[node name="logo" type="Sprite" parent="."]
+position = Vector2( 86.125, 69.5 )
+scale = Vector2( 0.0578808, 0.0541992 )
+texture = ExtResource( 3 )
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="about" to="." method="_on_about_pressed"]

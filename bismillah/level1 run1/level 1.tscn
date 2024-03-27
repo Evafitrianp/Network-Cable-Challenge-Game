@@ -1,0 +1,555 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Picsart_23-10-15_11-32-51-028.png" type="Texture" id=1]
+[ext_resource path="res://Picsart_23-10-15_14-12-18-446.png" type="Texture" id=2]
+[ext_resource path="res://Picsart_23-10-15_11-09-17-182.png" type="Texture" id=3]
+[ext_resource path="res://IMG-20231018-WA0002-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://Picsart_23-10-15_14-09-15-439.png" type="Texture" id=5]
+[ext_resource path="res://wesdfzvd.jpg" type="Texture" id=6]
+[ext_resource path="res://Line 1.png" type="Texture" id=7]
+[ext_resource path="res://Rectangle 1.png" type="Texture" id=8]
+[ext_resource path="res://level1 run/kotak text.gd" type="Script" id=9]
+[ext_resource path="res://Bubblegum.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Rectangle 5.png" type="Texture" id=12]
+[ext_resource path="res://level1 run/level1.gd" type="Script" id=16]
+[ext_resource path="res://Rectangle 6.png" type="Texture" id=17]
+
+[sub_resource type="DynamicFont" id=5]
+size = 150
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 12
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 100
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 18
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 19
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 30
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 43
+font_data = ExtResource( 11 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="level1" type="Node2D" parent="."]
+script = ExtResource( 16 )
+
+[node name="QuestionLabel" type="Label" parent="level1"]
+margin_right = 688.0
+margin_bottom = 166.0
+
+[node name="ScoreLabel" type="Label" parent="level1"]
+margin_left = 962.0
+margin_top = 49.0
+margin_right = 1097.0
+margin_bottom = 96.0
+
+[node name="PC2_IP_Input" type="LineEdit" parent="level1"]
+margin_left = 876.0
+margin_top = 186.0
+margin_right = 1196.0
+margin_bottom = 248.0
+text = "IP ADDRESS"
+
+[node name="PC2_Subnet_Input" type="LineEdit" parent="level1"]
+margin_left = 882.0
+margin_top = 268.0
+margin_right = 1191.0
+margin_bottom = 330.0
+text = "SM"
+
+[node name="PC2_Gateway_Input" type="LineEdit" parent="level1"]
+margin_left = 877.0
+margin_top = 346.0
+margin_right = 1195.0
+margin_bottom = 403.0
+text = "GW"
+
+[node name="PC2_DNS1_Input" type="LineEdit" parent="level1"]
+margin_left = 879.0
+margin_top = 419.0
+margin_right = 1201.0
+margin_bottom = 475.0
+text = "DNS 1"
+
+[node name="PC2_DNS2_Input" type="LineEdit" parent="level1"]
+margin_left = 874.0
+margin_top = 497.0
+margin_right = 1208.0
+margin_bottom = 560.0
+text = "DNS 2"
+
+[node name="Ether_IP_Input" type="LineEdit" parent="level1"]
+margin_left = 468.0
+margin_top = 189.0
+margin_right = 758.0
+margin_bottom = 251.0
+text = "IP ETHER"
+
+[node name="Ether_Gateway_Input" type="LineEdit" parent="level1"]
+margin_left = 467.0
+margin_top = 279.0
+margin_right = 757.0
+margin_bottom = 337.0
+text = "GW ETHER"
+
+[node name="SubmitButton" type="Button" parent="level1"]
+margin_left = 526.0
+margin_top = 557.0
+margin_right = 711.0
+margin_bottom = 624.0
+text = "tombol"
+
+[node name="TextureRect" type="TextureRect" parent="level1"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="laptop" type="Sprite" parent="level1"]
+position = Vector2( 899, 170 )
+scale = Vector2( 0.126667, 0.135236 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="level1/laptop"]
+margin_left = -173.684
+margin_top = 229.229
+margin_right = 126.316
+margin_bottom = 390.229
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "PC 1"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="SpritePC1_1" type="Sprite" parent="level1"]
+position = Vector2( 1100.5, 104.25 )
+scale = Vector2( 1.05525, 1.475 )
+texture = ExtResource( 12 )
+
+[node name="PC1_IP_Input" type="LineEdit" parent="level1"]
+margin_left = 1009.0
+margin_top = 93.0
+margin_right = 1192.0
+margin_bottom = 117.0
+align = 3
+placeholder_alpha = 0.597
+caret_blink_speed = 0.5
+
+[node name="Label2" type="Label" parent="level1/PC1_IP_Input"]
+margin_left = -60.0
+margin_top = 1.0
+margin_right = -18.0001
+margin_bottom = 18.0
+rect_scale = Vector2( 1.31355, 1.65108 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "IP :"
+align = 1
+valign = 1
+max_lines_visible = 3
+
+[node name="SpritePC1_2" type="Sprite" parent="level1"]
+position = Vector2( 1100.5, 138.25 )
+scale = Vector2( 1.05525, 1.475 )
+texture = ExtResource( 12 )
+
+[node name="PC1_Subnet_Input" type="LineEdit" parent="level1"]
+margin_left = 1009.0
+margin_top = 127.0
+margin_right = 1192.0
+margin_bottom = 151.0
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+
+[node name="Label5" type="Label" parent="level1/PC1_Subnet_Input"]
+margin_left = -59.0
+margin_top = -2.0
+margin_right = -7.0
+margin_bottom = 18.0
+rect_scale = Vector2( 0.991504, 1.71053 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "SM :"
+align = 1
+valign = 1
+
+[node name="SpritePC1_3" type="Sprite" parent="level1"]
+position = Vector2( 1100.5, 176.25 )
+scale = Vector2( 1.05525, 1.475 )
+texture = ExtResource( 12 )
+
+[node name="PC1_Gateway_Input" type="LineEdit" parent="level1"]
+margin_left = 1009.0
+margin_top = 165.0
+margin_right = 1192.0
+margin_bottom = 189.0
+
+[node name="Label4" type="Label" parent="level1/PC1_Gateway_Input"]
+margin_left = -53.0
+margin_top = -1.0
+margin_right = -12.9997
+margin_bottom = 16.0
+rect_scale = Vector2( 1.03149, 1.73094 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "GW :"
+align = 1
+valign = 1
+
+[node name="SpritePC1_4" type="Sprite" parent="level1"]
+position = Vector2( 1100.5, 214.25 )
+scale = Vector2( 1.05525, 1.475 )
+texture = ExtResource( 12 )
+
+[node name="PC1_DNS1_Input" type="LineEdit" parent="level1"]
+margin_left = 1009.0
+margin_top = 203.0
+margin_right = 1192.0
+margin_bottom = 227.0
+
+[node name="Label3" type="Label" parent="level1/PC1_DNS1_Input"]
+margin_left = -70.0
+margin_top = 3.0
+margin_right = -11.0
+margin_bottom = 17.0
+rect_scale = Vector2( 1.20202, 1.70597 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "DNS 1 :"
+align = 1
+valign = 1
+
+[node name="SpritePC1_5" type="Sprite" parent="level1"]
+position = Vector2( 1100.5, 252.25 )
+scale = Vector2( 1.05525, 1.475 )
+texture = ExtResource( 12 )
+
+[node name="PC1_DNS2_Input" type="LineEdit" parent="level1"]
+margin_left = 1009.0
+margin_top = 241.0
+margin_right = 1192.0
+margin_bottom = 265.0
+
+[node name="Label" type="Label" parent="level1/PC1_DNS2_Input"]
+margin_left = -62.0
+margin_top = -3.0
+margin_right = -17.9996
+margin_bottom = 14.0
+rect_scale = Vector2( 1.20012, 1.77724 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "DNS 2 :"
+align = 1
+valign = 1
+
+[node name="laptop2" type="Sprite" parent="level1"]
+position = Vector2( 866, 471 )
+scale = Vector2( 0.126667, 0.135236 )
+texture = ExtResource( 2 )
+
+[node name="Label11" type="Label" parent="level1/laptop2"]
+margin_left = -173.684
+margin_top = 229.229
+margin_right = 128.316
+margin_bottom = 390.229
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "PC 2"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Label10" type="Label" parent="level1"]
+margin_left = 913.0
+margin_top = 391.0
+margin_right = 953.0
+margin_bottom = 408.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "IP :"
+align = 1
+valign = 1
+
+[node name="Label9" type="Label" parent="level1"]
+margin_left = 913.0
+margin_top = 425.0
+margin_right = 953.0
+margin_bottom = 442.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "SM :"
+align = 1
+valign = 1
+
+[node name="Label8" type="Label" parent="level1"]
+margin_left = 912.0
+margin_top = 461.0
+margin_right = 952.001
+margin_bottom = 478.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "GW :"
+align = 1
+valign = 1
+
+[node name="Label7" type="Label" parent="level1"]
+margin_left = 906.89
+margin_top = 496.912
+margin_right = 950.891
+margin_bottom = 513.912
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "DNS1 :"
+align = 1
+valign = 1
+
+[node name="Label6" type="Label" parent="level1"]
+margin_left = 905.891
+margin_top = 531.912
+margin_right = 949.891
+margin_bottom = 548.912
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "DNS2 :"
+align = 1
+valign = 1
+
+[node name="internet" type="Sprite" parent="level1"]
+position = Vector2( 146, 99 )
+scale = Vector2( 0.23, 0.199 )
+texture = ExtResource( 3 )
+
+[node name="modem" type="Sprite" parent="level1"]
+position = Vector2( 142, 317 )
+scale = Vector2( 0.368656, 0.283829 )
+texture = ExtResource( 4 )
+
+[node name="ipm1" type="Sprite" parent="level1/modem"]
+position = Vector2( 716.115, 63.4185 )
+scale = Vector2( 2.65634, 3.46819 )
+texture = ExtResource( 8 )
+script = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="level1/modem/ipm1"]
+anchor_left = 61.208
+anchor_top = -9.18568
+anchor_right = 160.03
+anchor_bottom = -9.18568
+margin_left = -12017.1
+margin_top = 274.942
+margin_right = -30971.9
+margin_bottom = 313.942
+rect_pivot_offset = Vector2( 155.938, 18.4847 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "IP (modem):"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ether2" type="Sprite" parent="level1"]
+position = Vector2( 390, 462 )
+scale = Vector2( 0.241883, 0.185502 )
+texture = ExtResource( 1 )
+
+[node name="ipe1" type="Sprite" parent="level1/ether2"]
+position = Vector2( 864.054, -285.711 )
+scale = Vector2( 3.72423, 4.60633 )
+texture = ExtResource( 8 )
+script = ExtResource( 9 )
+
+[node name="Label2" type="Label" parent="level1/ether2/ipe1"]
+anchor_left = -213.187
+anchor_top = -12.2259
+anchor_right = 128.44
+anchor_bottom = -12.0072
+margin_left = 40913.1
+margin_top = 370.23
+margin_right = -24884.9
+margin_bottom = 407.23
+rect_scale = Vector2( 1.2056, 0.930331 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "IP (ether 2):"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="swicth" type="Sprite" parent="level1"]
+position = Vector2( 682, 456 )
+scale = Vector2( 0.147222, 0.126722 )
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="level1/swicth"]
+margin_left = -156.227
+margin_top = 189.391
+margin_right = 194.773
+margin_bottom = 363.391
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "SWITCH"
+align = 1
+valign = 1
+
+[node name="line" type="Sprite" parent="level1"]
+position = Vector2( 141.75, 230 )
+scale = Vector2( 0.699999, 0.77551 )
+texture = ExtResource( 7 )
+
+[node name="line6" type="Sprite" parent="level1"]
+position = Vector2( 772.875, 310.5 )
+scale = Vector2( 0.749987, 1.23673 )
+texture = ExtResource( 7 )
+
+[node name="line2" type="Sprite" parent="level1"]
+position = Vector2( 143.875, 407 )
+scale = Vector2( 0.749995, 0.506122 )
+texture = ExtResource( 7 )
+
+[node name="line3" type="Sprite" parent="level1"]
+position = Vector2( 246.645, 467.91 )
+rotation = 1.5708
+scale = Vector2( 0.840474, 0.861153 )
+texture = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="level1/line3"]
+margin_left = 7.0
+margin_top = 37.0
+margin_right = 74.0
+margin_bottom = 64.0
+rect_rotation = -90.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "ether 1"
+align = 1
+valign = 1
+
+[node name="line4" type="Sprite" parent="level1"]
+position = Vector2( 540.291, 466 )
+rotation = 1.5708
+scale = Vector2( 0.681479, 0.89962 )
+texture = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="level1/line4"]
+margin_left = -7.28394
+margin_top = 62.8975
+margin_right = 118.716
+margin_bottom = 112.897
+rect_rotation = -90.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "ether 2"
+align = 1
+valign = 1
+
+[node name="line5" type="Sprite" parent="level1"]
+position = Vector2( 773.967, 463.397 )
+rotation = 1.5708
+scale = Vector2( 0.70873, 0.459423 )
+texture = ExtResource( 7 )
+
+[node name="line7" type="Sprite" parent="level1"]
+position = Vector2( 816.03, 158.603 )
+rotation = 1.5708
+scale = Vector2( 0.867474, 0.369377 )
+texture = ExtResource( 7 )
+
+[node name="IPether1Label" type="Label" parent="level1"]
+margin_left = 95.9997
+margin_top = 518.0
+margin_right = 155.0
+margin_bottom = 561.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "IP :"
+
+[node name="GWether1Label" type="Label" parent="level1"]
+margin_left = 78.9995
+margin_top = 569.0
+margin_right = 158.0
+margin_bottom = 612.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "GW :"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="level1"]
+position = Vector2( 1149, 619 )
+scale = Vector2( 0.590674, 1.1875 )
+normal = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="level1/TouchScreenButton"]
+anchor_left = 0.5
+anchor_top = -0.635
+anchor_right = 0.5
+anchor_bottom = -0.635
+margin_left = -30.5
+margin_top = 19.32
+margin_right = 37.5
+margin_bottom = 52.32
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "QUIT"
+
+[node name="TouchNEXT" type="TouchScreenButton" parent="level1"]
+position = Vector2( 1148, 558 )
+scale = Vector2( 0.590674, 1.28125 )
+normal = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="level1/TouchNEXT"]
+margin_left = 62.6404
+margin_top = -0.780487
+margin_right = 133.64
+margin_bottom = 32.2195
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "NEXT"
+align = 1
+valign = 1
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="level1"]
+position = Vector2( 619, 630 )
+scale = Vector2( 0.456973, 0.537037 )
+normal = ExtResource( 17 )
+
+[node name="Label" type="Label" parent="level1/TouchScreenButton2"]
+margin_left = 91.9092
+margin_top = 5.58618
+margin_right = 242.909
+margin_bottom = 52.5862
+custom_fonts/font = SubResource( 13 )
+text = "SUBMIT"
+
+[connection signal="pressed" from="level1/TouchScreenButton" to="level1" method="_on_TouchScreenButton_pressed"]
+[connection signal="pressed" from="level1/TouchNEXT" to="level1" method="_on_TouchNEXT_pressed"]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://CircularStd-Black.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Desktop - 17.png" type="Texture" id=2]
+[ext_resource path="res://Rectangle 2.png" type="Texture" id=3]
+[ext_resource path="res://about/about.gd" type="Script" id=4]
+[ext_resource path="res://introo karakter/introo karakter/XPT5HRY-video-game.mp3" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 67
+extra_spacing_top = 26
+extra_spacing_char = 2
+extra_spacing_space = 5
+font_data = ExtResource( 1 )
+
+[node name="about" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 653, 344 )
+scale = Vector2( 0.898443, 0.678641 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="bg"]
+margin_left = -323.894
+margin_top = -428.798
+margin_right = 311.106
+margin_bottom = -310.798
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "DEVELOPED BY "
+
+[node name="kel" type="RichTextLabel" parent="bg"]
+margin_left = -404.032
+margin_top = -282.918
+margin_right = 330.968
+margin_bottom = -154.918
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+tab_size = 3
+text = "KELOMPOK 10 MIB :"
+
+[node name="nama" type="RichTextLabel" parent="bg"]
+margin_left = -615.509
+margin_top = -134.092
+margin_right = 570.491
+margin_bottom = 191.908
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+tab_size = 5
+text = "1. Septi Isdayanna (22091397045)
+2. Reza Fatkhur R (22091397061)
+3. Eva Fitria N P (22091397068)"
+
+[node name="about" type="TouchScreenButton" parent="."]
+position = Vector2( 1131, 45 )
+scale = Vector2( 0.331081, 1.7451 )
+normal = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 1157.0
+margin_top = 25.0
+margin_right = 1243.0
+margin_bottom = 162.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "X"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[connection signal="pressed" from="about" to="." method="_on_about_pressed"]
